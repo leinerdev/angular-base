@@ -5,11 +5,13 @@ import { LoadingComponent } from './components/loading/loading.component';
 import { HTTP_INTERCEPTORS } from '@angular/common/http';
 import { LoadingInterceptor } from './interceptors/loading/loading.interceptor';
 import { TokenInterceptor } from './interceptors/token/token.interceptor';
+import { NavbarComponent } from './components/navbar/navbar.component';
+import { RouterModule } from '@angular/router';
 
 @NgModule({
-  declarations: [LoadingComponent],
-  imports: [CommonModule],
-  exports: [LoadingComponent],
+  declarations: [LoadingComponent, NavbarComponent],
+  imports: [CommonModule, RouterModule],
+  exports: [LoadingComponent, NavbarComponent],
   providers: [
     {
       provide: ErrorHandler,
