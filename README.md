@@ -1,4 +1,4 @@
-# Línea base de Angular 17 para proyectos internos de DevsCO
+# Bloque de Angular 17
 
 ## Las caracter&iacute;sticas principales son
 
@@ -14,7 +14,7 @@
 - Guards para manejar cambios sin guardar (CanDeactivate)
 - Constantes para mensajes de experiencia de usuario
 - Constantes para mensajes de error en formularios
-- Input con ControlValueAccesor global para formularios
+- Input con ControlValueAccesor global para formularios (Se sugiere implementar para Selectores, Textareas, etc)
 - Manejo de Local Storage asíncrono con ([@ngx-pwa/local-storage](https://github.com/cyrilletuzi/angular-async-local-storage))
 - Internacionalización (i18n) con @angular/localize
 
