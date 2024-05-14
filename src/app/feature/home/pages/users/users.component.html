@@ -1,0 +1,13 @@
+<h1>Users</h1>
+<button (click)="getUsers()">Fetch users</button>
+<hr />
+<ul>
+  <li *ngFor="let user of users">
+    <img [src]="user.avatar" [alt]="user.first_name" />
+    <div>
+      {{ user.first_name }}
+      {{ user.last_name }} <br />
+      {{ user.email }}
+    </div>
+  </li>
+</ul>

@@ -1,0 +1,25 @@
+.input_container {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 40px;
+  position: relative;
+  width: 100%;
+  label {
+    margin-bottom: 1px;
+    color: #000;
+  }
+  input {
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+    &:focus {
+      outline: none;
+      border-color: #000;
+    }
+  }
+  small {
+    color: rgb(192, 29, 29);
+    position: absolute;
+  }
+}

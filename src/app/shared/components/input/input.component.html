@@ -1,0 +1,16 @@
+<div class="input_container">
+  <label for="customInput">{{ label }}</label>
+  <input
+    id="customInput"
+    [type]="type"
+    [formControl]="control"
+    [placeholder]="placeholder"
+    [maxlength]="maxlength"
+    [max]="max"
+    [min]="min" />
+  <output *ngIf="control.invalid && control.touched">
+    <small>
+      {{ getMessageError() }}
+    </small>
+  </output>
+</div>

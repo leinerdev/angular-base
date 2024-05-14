@@ -1,0 +1,14 @@
+<h1>Create User Form</h1>
+<hr />
+<form [formGroup]="userForm" (ngSubmit)="submit()">
+  <app-input
+    label="Nombre"
+    formControlName="name"
+    placeholder="Ingrese el nombre"></app-input>
+  <app-input
+    label="Correo"
+    formControlName="email"
+    type="email"
+    placeholder="Ingrese el correo"></app-input>
+  <button type="submit">Submit</button>
+</form>
