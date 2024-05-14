@@ -2,13 +2,15 @@
 <hr />
 <form [formGroup]="userForm" (ngSubmit)="submit()">
   <app-input
+    id="name"
     label="Nombre"
     formControlName="name"
     placeholder="Ingrese el nombre"></app-input>
   <app-input
+    id="email"
     label="Correo"
     formControlName="email"
     type="email"
     placeholder="Ingrese el correo"></app-input>
-  <button type="submit">Submit</button>
+  <button id="createUserButton" type="submit">Submit</button>
 </form>

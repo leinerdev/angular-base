@@ -1,22 +1,25 @@
-# Bloque de Angular 17
+# Bloque de Angular
+
+![Ceiba Software](https://ceibanet.ceiba.com.co/wp-content/uploads/2023/05/logoceibasoftware-horizontal-300x68.png)
 
 ## Las caracter&iacute;sticas principales son
 
-- Soporte de enrutamiento
-- Soporte lazy loading
-- Interceptor de peticiones http con componente de carga (Loading)
-- Interceptor para agregar Token de autorización a las peticiones
-- Arquitectura core-shared-feature
-- Pipe para uso de TrackBy dentro de los ngFor
-- Configuración de pruebas unitarias con Jest
-- Manejo centralizado de errores (ErrorHandler)
-- Pre-commit hooks con Husky + ESLint + Prettier
-- Guards para manejar cambios sin guardar (CanDeactivate)
-- Constantes para mensajes de experiencia de usuario
-- Constantes para mensajes de error en formularios
-- Input con ControlValueAccesor global para formularios (Se sugiere implementar para Selectores, Textareas, etc)
-- Manejo de Local Storage asíncrono con ([@ngx-pwa/local-storage](https://github.com/cyrilletuzi/angular-async-local-storage))
-- Internacionalización (i18n) con @angular/localize
+- *Soporte de enrutamiento*
+- *Soporte lazy loading*
+- *Interceptor de peticiones http con componente de carga (Loading)*
+- *Interceptor para agregar Token de autorización a las peticiones*
+- *Arquitectura core-shared-feature*
+- *Pipe para uso de TrackBy dentro de los ngFor*
+- *Configuración de pruebas unitarias con Jest*
+- *Configuración de pruebas end-to-end con Cypress*
+- *Manejo centralizado de errores (ErrorHandler)*
+- *Pre-commit hooks con Husky + ESLint + Prettier*
+- *Guards para manejar cambios sin guardar (CanDeactivate)*
+- *Constantes para mensajes de experiencia de usuario*
+- *Constantes para mensajes de error en formularios*
+- *Input con ControlValueAccesor global para formularios (Se sugiere implementar para Selectores, Textareas, etc)*
+- *Manejo de Local Storage asíncrono con ([@ngx-pwa/local-storage](https://github.com/cyrilletuzi/angular-async-local-storage))*
+- *Internacionalización (i18n) con @angular/localize*
 
 ## Estructura del proyecto
 
@@ -57,15 +60,40 @@ npm start
 http://localhost:4200
 ```
 
-# Build and Test
+# Testing
 
-1. Pruebas unitarias
+## Pruebas unitarias
 
+- Ejecutar pruebas unitarias con Jest
 ```
 npm run test
 ```
 
-# i18n
+- Ejecutar pruebas unitarias con Jest en modo watch
+```
+npm run test:watch
+```
+
+- Ejecutar pruebas unitarias con Jest en modo coverage
+```
+npm run test:coverage
+```
+
+## Pruebas end-to-end
+
+- Ejecutar pruebas end-to-end con Cypress
+```
+npm run e2e
+```
+
+# Build
+
+- Compilar el proyecto para producción
+```
+npm run build
+```
+
+# i18n (Internacionalización)
 
 ```
 ng extract-i18n --output-path src/locale
